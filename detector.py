@@ -89,7 +89,7 @@ if uploaded_image is not None:
                     with column_array[i%faces_in_each_row]:
                         st.image(face_images[i])
                         st.markdown("**Gender** : "+genders[i])
-                        st.write("**Age**:, ages[i])
+                        st.write("**Age**: ",ages[i])
                         st.markdown("**Race** : "+races[i])
                         st.markdown("**Emotion** : "+emotions[i])
         st.balloons()
