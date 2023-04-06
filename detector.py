@@ -15,7 +15,7 @@ def detect_attribs(face):
     results=DeepFace.analyze(face,actions=("gender","age","race","emotion"),enforce_detection=False)
     results=results[0]
     gender=results['dominant_gender']
-    age=results['dominant_age']
+    age=results['age']
     race=results['dominant_race']
     emotion=results['dominant_emotion']
     return gender,age,race,emotion
