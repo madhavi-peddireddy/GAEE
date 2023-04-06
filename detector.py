@@ -10,7 +10,7 @@ import cv2
 @st.cache_data(persist="disk")
 def detect_attribs(face):
     """
-    Function that detects gender, race and emotion for the detected face.
+    Function that detects gender,age, race and emotion for the detected face.
     """
     results=DeepFace.analyze(face,actions=("gender","age","race","emotion"),enforce_detection=False)
     results=results[0]
@@ -23,7 +23,7 @@ def detect_attribs(face):
 @st.cache_data(persist="disk")
 def mark_faces(image,faces):
     """
-    Function returns the gender, race and emotion of all the detected faces and returns them in the form of arrays. 
+    Function returns the gender, age, race and emotion of all the detected faces and returns them in the form of arrays. 
     """
     face_images=[]
     genders=[]
@@ -46,7 +46,7 @@ def mark_faces(image,faces):
 upload_flag=0
 faces_in_each_row=4
 st.set_page_config(layout="wide",initial_sidebar_state='expanded')
-st.markdown("<h1 style='text-align:center;background-color:SkyBlue'> Gender Ethnicity Emotion Detector</h1>",unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;background-color:SkyBlue'> Gender Age Ethnicity Emotion Detector</h1>",unsafe_allow_html=True)
 
 
 
