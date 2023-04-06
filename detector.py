@@ -46,7 +46,7 @@ def mark_faces(image,faces):
 upload_flag=0
 faces_in_each_row=4
 st.set_page_config(layout="wide",initial_sidebar_state='expanded')
-st.markdown("<h1 style='text-align:center;background-color:SkyBlue'> Gender Age Ethnicity Emotion Detector</h1>",unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;background-color:#0040ff'> Gender Age Ethnicity Emotion Detector</h1>",unsafe_allow_html=True)
 
 
 
